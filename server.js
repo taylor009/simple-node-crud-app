@@ -1,6 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const product = require('./routes/product.route');;
 const app = express();
+
+app.use('/products', product);
 
 const PORT = process.env.PORT || 3000;
 
